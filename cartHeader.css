@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+/* Add a black background color to the top navigation */
+.cartHeader {
+    font-family: 'Oswald', sans-serif;
+    overflow: hidden;
+}
+
+.logo {
+    float: left;
+    font-size: 30px;
+    color: white;
+    padding: 10px;
+}
+
+/* Style the links inside the navigation bar */
+.cartHeader a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 23px;
+}
