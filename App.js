@@ -1,15 +1,23 @@
-import navBar from "./navBar";
-import cartHeader from "./cartHeader";
-import {Fragment} from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom"
+import Home from "./Home"
+import 'bootstrap/dist/css/bootstrap.min.css'
+import { Container } from "react-bootstrap"
 
-const App = () => {
- return (
-     <div>
-         {navBar()}
-         {cartHeader}
-     </div>
+function App() {
 
- );
+  return (
+      <Router>
+        <Container>
+          <Switch>
+            <Route path="/" component={Home} />
+          </Switch>
+        </Container>
+      </Router>
+  );
 }
 
 export default App;
